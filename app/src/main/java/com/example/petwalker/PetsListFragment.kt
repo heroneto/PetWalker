@@ -24,7 +24,7 @@ import java.net.URL
 class PetsListFragment : Fragment() {
 
     val listaPets = mutableListOf<PetData>()
-    val url = "http://[MyEndpoint]/pets"
+    val url = "http://[myendpoint]/pets"
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -55,7 +55,6 @@ class PetsListFragment : Fragment() {
                     )
                 }
                 val listView = view.findViewById<ListView>(R.id.pet_listView)
-                println(listaPets)
                 listView.adapter = PetItemAdapter(view.context, listaPets)
             },
             { error ->
