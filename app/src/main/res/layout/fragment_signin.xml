@@ -45,7 +45,7 @@
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_edittext"
             android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
-            android:hint="@string/loginUserHint"
+            android:hint="@string/petNameHint"
             android:inputType="textFilter"
             android:padding="5dp"
             android:paddingHorizontal="10dp"

@@ -22,7 +22,7 @@
     <fragment
         android:id="@+id/destination_signup"
         android:name="com.example.petwalker.SignUpFragment"
-        android:label="SignUpActivity"
+        android:label="fragment_signup"
         tools:layout="@layout/fragment_signup">
         <action
             android:id="@+id/navigate_to_sigin_fragment_action"
@@ -33,8 +33,53 @@
     <fragment
         android:id="@+id/destination_petlist"
         android:name="com.example.petwalker.PetsListFragment"
-        android:label="SignUpActivity"
+        android:label="fragment_petlist"
         tools:layout="@layout/fragment_petlist">
+        <action
+            android:id="@+id/navigate_to_petdetails_fragment_action"
+            app:destination="@+id/destination_petdetails"/>
+        <action
+            android:id="@+id/navigate_to_petcreate_fragment_action"
+            app:destination="@+id/destination_petcreate"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_petdetails"
+        android:name="com.example.petwalker.PetDetailsFragment"
+        android:label="fragment_petdetails"
+        tools:layout="@layout/fragment_petdetails">
+        <action
+            android:id="@+id/navigate_to_petlist_fragment_action"
+            app:destination="@+id/destination_petlist"/>
+        <action
+            android:id="@+id/navigate_to_petedit_fragment_action"
+            app:destination="@+id/destination_petedit"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_petedit"
+        android:name="com.example.petwalker.PetEditFragment"
+        android:label="fragment_petedit"
+        tools:layout="@layout/fragment_petedit">
+        <action
+            android:id="@+id/navigate_to_petlist_fragment_action"
+            app:destination="@+id/destination_petlist"/>
+        <action
+            android:id="@+id/navigate_to_petdetails_fragment_action"
+            app:destination="@+id/destination_petdetails"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_petcreate"
+        android:name="com.example.petwalker.PetCreateFragment"
+        android:label="fragment_petcreate"
+        tools:layout="@layout/fragment_petcreate">
+        <action
+            android:id="@+id/navigate_to_petlist_fragment_action"
+            app:destination="@+id/destination_petlist"/>
     </fragment>
 
 </navigation>

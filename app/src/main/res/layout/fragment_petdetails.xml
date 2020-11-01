@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/headerListBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo_pressed" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/pet_view_title"
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="800"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+                <Button
+                    android:id="@+id/closeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:text="X"
+                    android:fontFamily="@font/poppins"
+                    android:textFontWeight="800"
+                    android:textSize="24sp"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="16"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            >
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center"
+                android:src="@drawable/petimage" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="30dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do Pet"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/petname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/disabledInputBackground"
+                    android:hint="@string/loginUserHint"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Belchior"
+                    android:textColor="@color/colorPrimary"
+                    android:focusable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome do dono"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/petowner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/disabledInputBackground"
+                    android:hint="@string/petOwnerHint"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Maria"
+                    android:textColor="@color/colorPrimary"
+                    android:focusable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo de Pet"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/pettype"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/disabledInputBackground"
+                    android:hint="@string/petTypeHint"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Belchior"
+                    android:textColor="@color/colorPrimary"
+                    android:focusable="false"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Dia de passeio"
+                    android:textColor="@color/colorPrimary" />
+
+                <RadioGroup
+                    android:id="@+id/walkDaysRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/squared_rounded_radio_options"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:padding="16dp"
+                            android:text="Seg" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/squared_rounded_radio_options"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:padding="16dp"
+                            android:text="Ter" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/squared_rounded_radio_options"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:padding="16dp"
+                            android:text="Qua" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/squared_rounded_radio_options"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:padding="16dp"
+                            android:text="Qui" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/squared_rounded_radio_options"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:padding="16dp"
+                            android:text="Sex" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/squared_rounded_radio_options"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:padding="16dp"
+                            android:text="Sab" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/squared_rounded_radio_options"
+                            android:button="@android:color/transparent"
+                            android:checked="false"
+                            android:padding="16dp"
+                            android:text="Dom" />
+                    </LinearLayout>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horário"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/walkHour"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/disabledInputBackground"
+                    android:hint="@string/petWalkHourHint"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="Às 08:00 hrs"
+                    android:textColor="@color/colorPrimary"
+                    android:focusable="false"
+                    />
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ripple_rounded_button"
+                    android:clickable="true"
+                    android:paddingHorizontal="40dp"
+                    android:text="Editar"
+                    android:textColor="@android:color/white"
+                    android:textColorHighlight="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

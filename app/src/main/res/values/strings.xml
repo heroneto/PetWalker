@@ -6,4 +6,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pet_list_title">Seus Pets</string>
+    <string name="pet_view_title">Detalhes do Pet</string>
+    <string name="petNameHint">Insira o nome do Pet</string>
+    <string name="petOwnerHint">Insira o nome do dono do Pet</string>
+    <string name="petTypeHint">Insira o tipo de Pet</string>
+    <string name="petWalkHourHint">Insira o horário de passeio</string>
+    <string name="pet_create_title">Criação de Pet</string>
 </resources>

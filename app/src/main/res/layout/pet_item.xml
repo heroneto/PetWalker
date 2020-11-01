@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_linear_layout"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/petItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:src="@drawable/petimage" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="16dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="start"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/petname"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Nome do Pet"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textFontWeight="700" />
+
+                                <TextView
+                                    android:id="@+id/petowner"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Dono do Pet"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textFontWeight="500" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|end"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/walkday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Dias de passeio"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textFontWeight="700" />
+
+                                <TextView
+                                    android:id="@+id/walkhour"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/poppins"
+                                    android:text="Horário de passeio"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textFontWeight="500" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
